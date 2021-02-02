@@ -34,7 +34,7 @@ SECRET_KEY = '%)r=15sfgk7#ao6*t%7s&1wucju=#@*#jihf716s22m6g4jn=p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', 'https://fathomless-hamlet-49644.herokuapp.com/']
 
 
 # Application definition
