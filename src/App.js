@@ -102,23 +102,23 @@ class App extends Component {
         if (item.id) {
             axios
                 // Because of proxy in package.json, command be shorten as follows:
-                // .put(`http://localhost:8000/api/todos/${item.id}/`, item)
-                .put(`/api/todos/${item.id}/`, item)
+                 .put(`http://localhost:8000/api/todos/${item.id}/`, item)
+                //.put(`/api/todos/${item.id}/`, item)
                 .then(res => this.refreshList());
             return;
         }
         axios
             // Because of proxy in package.json, command be shorten as follows:
-            // .post("http://localhost:8000/api/todos/", item)
-            .post("/api/todos/", item)
+            .post("http://localhost:8000/api/todos/", item)
+           // .post("/api/todos/", item)
             .then(res => this.refreshList());
     };
 
     handleDelete = item => {
         axios
             // Because of proxy in package.json, command be shorten as follows:
-            // .delete(`http://localhost:8000/api/todos/${item.id}`)
-            .delete(`/api/todos/${item.id}/`)
+             .delete(`http://localhost:8000/api/todos/${item.id}`)
+           // .delete(`/api/todos/${item.id}/`)
             .then(res => this.refreshList());
     };
 
