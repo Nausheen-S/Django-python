@@ -25,9 +25,9 @@ class App extends Component {
 
     refreshList = () => {
         axios
-            // .get("http://localhost:8000/api/todos/")
+             .get("http://localhost:8000/api/todos/")
             // Because of proxy in package.json, command be shorten as follows:
-            .get("/api/todos/")
+           // .get("/api/todos/")
             .then(res => this.setState({ todoList: res.data }))
             .catch(err => console.log(err));
     };
