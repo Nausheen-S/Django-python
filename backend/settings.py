@@ -36,7 +36,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*', 'https://fathomless-hamlet-49644.herokuapp.com/']
 
-
+DANGEROUSLY_DISABLE_HOST_CHECK = True
 # Application definition
 
 INSTALLED_APPS = [
